@@ -150,5 +150,7 @@ async def call(ctx, user: discord.Member, channel: discord.TextChannel = None):
 		    f"{ctx.author.name} is calling you {user.mention} in {ctx.channel.mention} channel"
 		)
 
+token = os.getenv("ODYwNzM4Njc2ODQ1MDUxOTM0.YN_nXA.T__5V7i4PPt32kapqQI6m1h962k")
 
-client.run('ODYwNzM4Njc2ODQ1MDUxOTM0.YN_nXA.T__5V7i4PPt32kapqQI6m1h962k')
+client.run(token)
+#client.run('ODYwNzM4Njc2ODQ1MDUxOTM0.YN_nXA.T__5V7i4PPt32kapqQI6m1h962k')
