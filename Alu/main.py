@@ -41,7 +41,7 @@ async def join(ctx):
 
 
 @client.command(name= 'play', aliases= ['p'])
-async def p(ctx, *, url= None):
+async def play(ctx, *, url= None):
     await ctx.invoke(join)
     if url:
         video =  pafy.new(url)
