@@ -11,7 +11,7 @@ import youtube_dl
 import os
 import random
 
-client = commands.Bot(command_prefix="")
+client = commands.Bot(command_prefix="*")
 
 @client.event
 async def on_ready():
@@ -98,16 +98,14 @@ async def hi(ctx):
 @client.command()
 async def Alu(ctx):
 	await ctx.send(
-	    "Hi!! My name is Alu. Alu means Potato. But I am not a potato . I am a bot. Bappy is my creator. Mainly my work is to help you to mention anyone. If you want to mention anyone please write '*call' then mention him or her. I will send a massage to his or her inbox with your name. you can also mention the channel where you are calling him or her. Type ' *spin' for fun. Type ' *me' to know about yourself. "
+	    "Hi!! My name is Alu. Alu means Potato. But I am not a potato . I am a bot. Bappy is my creator. Mainly my work is to help you to mention anyone. If you want to mention anyone please write '*call' then mention him or her. I will send a massage to his or her DM with your name. you can also mention the channel where you are calling him or her. Also I will play music for you with so many features. Type ' *help' to know about all commands.  "
 	)
 
 
 #command 3
 @client.command()
 async def alu(ctx):
-	await ctx.send(
-	    "Hi!! My name is Alu. Alu means Potato. But I am not a potato . I am a bot. Bappy is my creator. Mainly my work is to help you to mention anyone. If you want to mention anyone please write '*call' then mention him or her. I will send a massage to his or her inbox with your name. you can also mention the channel where you are calling him or her. Type ' *spin' for fun. Type ' *me' to know about yourself. "
-	)
+	await ctx.send("Hi!! My name is Alu. Alu means Potato. But I am not a potato . I am a bot. Bappy is my creator. Mainly my work is to help you to mention anyone. If you want to mention anyone please write '*call' then mention him or her. I will send a massage to his or her DM with your name. you can also mention the channel where you are calling him or her. Also I will play music for you with so many features. Type ' *help' to know about all commands. ")
 
 
 #command 4
