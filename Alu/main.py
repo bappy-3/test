@@ -59,7 +59,7 @@ async def play(ctx, *, url= None):
         ctx.voice_client.play(source)
 
         def play_next(client, message):
-        asyncio.run_coroutine_threadsafe(play_music(client, message), client.loop)
+        asyncio.run_coroutine_threadsafe(play(client, message), client.loop)
 
 
 
