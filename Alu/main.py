@@ -38,6 +38,10 @@ async def join(ctx):
                     await ctx.send(f'Bot moved to {vc.channel.mention}')
                 else:
                     pass
+    self.player = None
+    self.voice = None
+    mvoice = await client.join_voice_channel(voice channel id here)
+    self.voice = mvoice
 
 
 @client.command(name= 'play', aliases= ['p'])
@@ -53,6 +57,11 @@ async def play(ctx, *, url= None):
         source = discord.FFmpegPCMAudio("song.mp3")
         await ctx.send(f'Now Playing: **{video.title}**')
         ctx.voice_client.play(source)
+
+        def play_next(client, message):
+        asyncio.run_coroutine_threadsafe(play_music(client, message), client.loop)
+
+
 
 
 @client.command()
