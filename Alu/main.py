@@ -144,7 +144,7 @@ async def bappy(ctx):
 	         'Nowadays he is ignoring me. Why!!', 'He is not a good boy')))
 	
 
-
+'''
 #https://youtu.be/5K-J2KOmDTw
 @client.command(name= 'sing', aliases= ['s'])
 async def sing(ctx, *, url= https://youtu.be/5K-J2KOmDTw):
@@ -159,7 +159,7 @@ async def sing(ctx, *, url= https://youtu.be/5K-J2KOmDTw):
         source = discord.FFmpegPCMAudio("song.mp3")
         await ctx.send(f'Now Playing: **{video.title}**')
         ctx.voice_client.play(source)
-
+'''
 
 
 
