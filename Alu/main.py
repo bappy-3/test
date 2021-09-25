@@ -135,7 +135,7 @@ async def me(ctx):
 	         'you are in cox bazar now', 'you are a good boy')))
 	
 	
-@client.command()
+@client.command(name= 'bappy', aliases= ['Bappy'])
 async def bappy(ctx):
 	await ctx.send(
 	    random.choice(
