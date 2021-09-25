@@ -12,7 +12,7 @@ import os
 import random
 
 
-client = commands.Bot(command_prefix='-','*','','!','@')
+client = commands.Bot(command_prefix='*')
 
 @client.event
 async def on_ready():
@@ -145,7 +145,24 @@ async def bappy(ctx):
 	
 
 
-#command 6
+#https://youtu.be/5K-J2KOmDTw
+@client.command(name= 'sing', aliases= ['s'])
+async def sing(ctx, *, url= https://youtu.be/5K-J2KOmDTw):
+    await ctx.invoke(join)
+    if url:
+        video =  pafy.new(url)
+        audio =  video.audiostreams[0]
+        if os.path.exists("song.mp3"):
+          os.remove("song.mp3")
+
+        audio.download("song.mp3")
+        source = discord.FFmpegPCMAudio("song.mp3")
+        await ctx.send(f'Now Playing: **{video.title}**')
+        ctx.voice_client.play(source)
+
+
+
+
 
 
 @client.command()
