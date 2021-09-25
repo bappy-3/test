@@ -11,7 +11,9 @@ import youtube_dl
 import os
 import random
 
-client = commands.Bot(command_prefix="*","","-"."!",".")
+client = commands.Bot(command_prefix="")
+client = commands.Bot(command_prefix="*")
+client = commands.Bot(command_prefix="-")
 
 @client.event
 async def on_ready():
@@ -132,6 +134,16 @@ async def me(ctx):
 	        ('you are lazy', 'you are brilliant', 'you are active',
 	         'you are bad', 'you are little baby', 'you are crying now',
 	         'you are in cox bazar now', 'you are a good boy')))
+	
+	
+@client.command()
+async def bappy(ctx):
+	await ctx.send(
+	    random.choice(
+	        ('A lazy boy', 'Dont tell to me his name', 'A donkey who can not do anything',
+	         'He is trying to delete me. Please help', 'He said to me that he will make another bot and delete me. Please help.', 'If you can, please ban him from this server. Please',
+	         'Nowadays he is ignoring me. Why!!', 'He is not a good boy')))
+	
 
 
 #command 6
