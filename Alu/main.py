@@ -11,7 +11,7 @@ import youtube_dl
 import os
 import random
 
-client = commands.Bot(command_prefix="*")
+client = commands.Bot(command_prefix="*","","-"."!",".")
 
 @client.event
 async def on_ready():
@@ -39,7 +39,7 @@ async def join(ctx):
                 else:
                     pass
     
-@client.command(name= 'play', aliases= ['p'])
+@client.command(name= 'play', aliases= ['p','','sing'])
 async def play(ctx, *, url= None):
     await ctx.invoke(join)
     if url:
